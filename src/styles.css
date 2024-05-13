@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  label > select, label > input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* styles.cssの既存のスタイルの下に追加 */
+@media (max-width: 600px) {
+    form {
+      width: 100%; /* フォームの幅を画面幅に合わせる */
+      box-shadow: none; /* モバイルでは影を消す */
+      border-radius: 0; /* 角の丸みをなくす */
+      margin: 0;
+      padding: 10px; /* パディングを少し減らす */
+    }
+  
+    body {
+      background-color: #fff; /* モバイルでは背景色を白に統一 */
+    }
+  }
+
+  /* styles.css */
+.success-message {
+    color: #0044cc; /* 青色のテキスト */
+    background-color: #ccddff; /* 軽い青色の背景 */
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #888;
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+  }
+  
+  
